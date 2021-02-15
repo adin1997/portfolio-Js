@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+<script src = "portfolio.js"></script>
+</head>
+<body>
+  
+  <div class="parallax" id = "home-section">
+    <div class="layer">
+      <div class = "Banner-text">
+        <p> Front-end Development
+        </p>
+        <p class = "tag-line">Hi. I’m Nandini, a Shopify Developer with 1 year experience creating successful websites.</p>
+        <p class = "down-arrow"></p>
+    </div>
+    </div>
+  </div>
+    <div class = "mainWrapper" style = "height: 100vh;">
+        <div class = "bannerWrapper">
+            <div class = "header desktop-nav" id = "fixedHeader">
+                <div class = "portfolio_heading"> portfolio</div>
+                <div class = "header_nav">
+                    <ul class = "primary-nav__items">
+                        <li class = "primary-nav__item home">
+                            <a href = "#home-section" class = "primary-nav__link">Home</a>
+                        </li>
+                        <li class = "primary-nav__item about">
+                            <a href = "#about-section" class = "primary-nav__link">About</a>
+                        </li>
+                        <li class = "primary-nav__item work">
+                            <a href = "#services" class = "primary-nav__link">Work</a>
+                        </li>
+                        <li class = "primary-nav__item contact">
+                            <a href = "#footer-section" class = "primary-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+              <div class = "mobile-nav" id = "fixedMobileHeader">
+                <div class = "flex-header">
+                <div class = "portfolio_heading"> portfolio</div>
+                <div class = "menu header_nav" onclick="myFunction()">MENU</div>
+              </div>
+              <div id = "nav-menu">
+                <ul id = "menuList">
+                  <li class = "primary-nav__item home" onclick="closeDiv();">
+                    <a href = "#home-section" class = "primary-nav__link">Home</a>
+                </li>
+                <li class = "primary-nav__item about" onclick="closeDiv();">
+                    <a href = "#about-section" class = "primary-nav__link">About</a>
+                </li>
+                <li class = "primary-nav__item work" onclick="closeDiv();">
+                    <a href = "#services" class = "primary-nav__link">Work</a>
+                </li>
+                <li class = "primary-nav__item contact" onclick="closeDiv();">
+                    <a href = "#footer-section" class = "primary-nav__link">Contact</a>
+                </li>
+                </ul>
+              </div>
+              </div>
+           
+        </div>
+        <div id = "about-section" class = "contentInfo">
+            <div class = "aboutUs-left">
+                <p class = "text-center about_heading section-heading">About me</p>
+                <p class = "text-center">
+                  Hi, I'm web developer with 1.5 years of experience. Currently am working as a Associate Software Developer at <a class = "aboutUs_link" href = "https://suventure.in/" target = "_blank">Suventure Service Pvt Ltd</a>. See my previous work history on <a class = "aboutUs_link" href = "https://www.linkedin.com/in/nandini-g-v-17181715a/" target = "_blank">LinkedIn</a>. Specializing in custom theme development in Shopify. If you're a business seeking a web presence or are looking to hire <a class = "aboutUs_link" href = "#footer-section">contact me </a>
+                </p>
+                <button class = "download"><a href = "/Nandini.pdf"  download>Download my cv</a></button>
+            </div>
+            <div class = "aboutUs-right">
+                <img src = "aboutus-right.png" />
+            </div>
+      
+        </div>
+        <section id="services" class="bg-gray">
+            <div class="container">
+              <header class="text-center mb-5">
+                <p class="service-heading section-heading">Work</p>
+              </header>
+              <div class="row text-center">
+                <div class="col-lg-4">
+                  <div class="bg-white mb-4 p-4">
+                    <div class="icon mb-3"><img src = "shopify-icon.svg" /></i>
+                    </div>
+                    <h4 class="block-heading text-uppercase font-weight-bold">Shopify</h4>
+                    <p class="small text-gray">
+                        Fifth abundantly made Give sixth hath. Cattle creature i be don't them. 
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="col-lg-4">
+                  <div class="bg-white mb-4 p-4">
+                    <div class="icon mb-3"><img src = "calculator.svg" /></div>
+                    <h4 class="block-heading text-uppercase font-weight-bold">Calculator</h4>
+                    <p class="small text-gray">
+                      Simple Calculator application using HTML, CSS, and Javascript.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4">
+                  <div class="bg-white">
+                    <a href = "https://github.com/adin1997/To-do" target="_blank">
+                    <div class="icon mb-3"><img src = "checklists.svg" /> </div>
+                    <h4 class="block-heading text-uppercase font-weight-bold">To-do</h4>
+                    <p class="small text-gray">
+                      Todo application using HTML, CSS, and Javascript and JQuery.                
+                    </p>
+                  </a>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4">
+                  <div class="bg-white mb-4 p-4">
+                    <a href = 'https://bartonsgifts.com/' target = "_blank">
+                    <div class="icon mb-3"><img src = "smartphone.svg" /></div>
+                    <h4 class="block-heading text-uppercase font-weight-bold">Bartons and sons</h4>
+                    <p class="small text-gray">
+Customized Shopify e-commerce store for exclusive silverware                                     </p>
+                                      </a>
+                  </div>
+                </div>
+                
+                <div class="col-lg-4">
+                  <div class="bg-white mb-4 p-4">
+                    <div class="icon mb-3"><img src = "online-shop.svg" /></div>
+                    <h4 class="block-heading text-uppercase font-weight-bold">Test Store</h4>
+                    <p class="small text-gray">Fifth abundantly made Give sixth hath. Cattle creature i be don't them. </p>
+                  </div>
+                </div>
+              
+                <div class="col-lg-4">
+                  <div class="bg-white mb-4 p-4">
+                    <div class="icon mb-3"><img src = "send-mail.svg" /></div>
+                    <h4 class="block-heading text-uppercase font-weight-bold">Email template</h4>
+                    <p class="small text-gray">
+                        Samples  of Customized templates for email marketing
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </section>
+        <div id = "footer-section" class = "contact">
+          <div class="layer">
+           <form  autocomplete="off" enctype="text/plain" id="contactForm" name="sentMessage" action="mailto:nandini@suventure.com?subject= Contact us mail!" method="post">
+            <div class="row" id = "id01">
+                <div class="col-left">
+                    <div class="form-group">
+                      <input  pattern="[a-zA-Z][a-zA-Z ]+" name = "name" class="form-control" id="name" type="text" placeholder="Your Name *" required="required" >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" name = "email" id="email" type="email" placeholder="Your Email *" required="required" >
+                    </div>
+                    <br>
+                    <div class="form-group mb-md-0">
+                        <input pattern="[6789][0-9]{9}" name = "phone" class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required">
+                    </div>
+                    <br>
+                </div>
+                <div class="col-right">
+                    <div class="form-group form-group-textarea">
+                        <textarea class="form-control" name = "message" id="message" placeholder="Your Message *" required="required"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="button-wrapper text-center">
+                <button onclick="document.getElementById('id01').style.display='block'" class="btn text-uppercase" id="sendMessageButton" type="submit">Contact me</button>
+              </div>
+        </form>
+    </div>
+      </div>
+    </div>
+    
+</body>
+</html>
+
